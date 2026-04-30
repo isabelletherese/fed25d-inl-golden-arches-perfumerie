@@ -1,4 +1,4 @@
-## 🎨 Design handoff
+## 🎨 About the design
 
 This project includes a design handoff to support the almighty dev-team.
 
@@ -22,7 +22,20 @@ We focused and wanted a feel of:
 
 Instead of cramping in too much, we worked with spacing, hierachy and contrast to guide the user naturally trough the page.
 
----
+### Concept
+
+What if McDonald’s entered the world of luxury perfume?
+
+That idea became the foundation of the design.
+
+We took something familiar and everyday, and reimagined it in a completely different context — using a more minimal, premium and editorial style.
+
+The contrast between fast food and luxury is intentional.  
+It adds personality, humor and makes the experience more memorable.
+
+The goal was to create something that feels both familiar and unexpected at the same time.
+
+## Design below
 
 ### Typography
 
