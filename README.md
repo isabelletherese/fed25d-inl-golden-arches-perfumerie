@@ -24,6 +24,17 @@ Instead of cramping in too much, we worked with spacing, hierachy and contrast t
 
 ---
 
+### Typography
+
+- Font sizes, weights and spacing are defined in Figma styles
+- Developers should follow the defined text styles
+
+Headings: Bondoni moda SC 
+
+Body font: Roboto Condensed, Light
+
+Product font: Cormorant, Regular
+
 ### Interactions & UX
 
 We didn't want the UI to feel too static, so we added small interactive details that make it feel more alive - without being too distracting.
