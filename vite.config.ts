@@ -2,4 +2,8 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   base: '/fed25d-grafiska-verktyg-brand-identity/',
+  build: {
+    outDir: 'docs',
+    emptyOutDir: true,
+  },
 });
