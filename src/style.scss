@@ -3,15 +3,10 @@ h2 {
   font-size: 12rem;
 }
 
-body {
-  background-color: #121212;
-  color: white;
-}
-
 
 .hero {
   min-height: 100vh;
-  background: url('./src/assets/product-images/golden-fries.png') center/contain;
+  background: url('./src/assets/product-images/golden-fries.png') center/cover;
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -19,17 +14,11 @@ body {
   padding-top: 30px;
 }
 
-.hero-label {
-  margin: 0 0 8px 0;
-}
-
-.hero-title {
-  margin: 0 0 16px 0;
-  line-height: 1.1;
-  font-family: 'Bodoni Moda SC', sans-serif;
-  font-size: 5rem;
-}
-
+.hero-label, 
+.hero-title, 
 .hero-text {
-  margin: 0;
+  margin: 50px;
+  line-height: 1.1;
 }
+
+
