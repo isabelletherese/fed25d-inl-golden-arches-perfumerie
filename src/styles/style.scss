@@ -10,6 +10,34 @@ body {
   background-color: var(--background-color);
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  nav {
+    display: flex;
+    gap: 10px;
+  }
+
+  a {
+    font-family: Roboto Condensed;
+    text-decoration: none;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+}
+
+.header-logo {
+  margin-right: auto;
+}
+
+.bag-icon {
+  margin-left: auto;
+}
+
 h1 {
   font-family: 'Bodoni moda SC';
   letter-spacing: clamp(0.05em, 1vw, 0.1em);
