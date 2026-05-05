@@ -2,3 +2,23 @@ h2 {
   font-family: 'Cormorant', sans-serif;
   font-size: 12rem;
 }
+
+
+.hero {
+  min-height: 100vh;
+  background: url('./src/assets/product-images/golden-fries.png') center/cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.hero-label, 
+.hero-title, 
+.hero-text {
+  margin: 50px;
+  line-height: 1.1;
+}
+
+
