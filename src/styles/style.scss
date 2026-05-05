@@ -1,0 +1,56 @@
+:root {
+  --background-color: #121212;
+  --text-color: #F5F5F0;
+  --primary-accent-color: #D0AB30;
+  --secondary-accent-color: #A8221E;
+  --progress-bar-color: #2A2A2A;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+h1 {
+  font-family: 'Bodoni moda SC';
+  letter-spacing: clamp(0.05em, 1vw, 0.1em);
+  font-weight: 500;
+  line-height: 1.1;
+  color: linear-gradient(to right, #DBA901, #E6C35C);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Bodoni moda SC';
+  font-size: 64px;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-color);
+  letter-spacing: 0;
+  max-width: 65ch;
+}
+
+.hero {
+  min-height: 100vh;
+  background: url('./src/assets/product-images/golden-fries.png') center/cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.hero-label, 
+.hero-title, 
+.hero-text {
+  margin: 50px;
+  line-height: 1.1;
+}
+
+
