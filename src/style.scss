@@ -2,3 +2,51 @@ h2 {
   font-family: 'Cormorant', sans-serif;
   font-size: 12rem;
 }
+.product-card {
+  width: 400px;
+  height: 504px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.product-card__img {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 380 / 212.09;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.product-card__info {
+  width: 276px;
+  height: 188px;
+  justify-self: center;
+  h3 {
+    font-weight: 400;
+    font-size: 2rem;
+    .italic300 {
+      font-style: italic;
+      font-weight: 300;
+    }
+  }
+  p {
+    font-weight: 300;
+    font-style: light;
+    font-size: 1rem;
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+    .product-card__price {
+      font-weight: 600;
+      line-height: 100%;
+      letter-spacing: 2%;
+    }
+    .product-card__cta {
+      all: unset;
+      cursor: pointer;
+    }
+  }
+}
