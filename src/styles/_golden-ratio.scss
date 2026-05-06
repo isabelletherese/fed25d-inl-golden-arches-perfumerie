@@ -26,6 +26,11 @@
      width: 100%;
 
      h2 {
+         align-self: flex-start;
+         text-align: left;
+     }
+
+     h3 {
          font-size: 36px;
          white-space: nowrap;
          font-weight: 400;
@@ -68,7 +73,7 @@
 
  @media screen and (min-width:768px) {
      .golden-ratio {
-         h2 {
+         h3 {
              font-size: 48px;
          }
      }
