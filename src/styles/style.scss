@@ -1,0 +1,113 @@
+@use './reset';
+@use './productCards';
+@use './golden-ratio';
+
+:root {
+  --background-color: #121212;
+  --text-color: #f5f5f0;
+  --primary-accent-color: #d0ab30;
+  --secondary-accent-color: #a8221e;
+  --progress-bar-color: #2a2a2a;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--background-color);
+
+  nav {
+    display: flex;
+    gap: 40px;
+  }
+
+  a {
+    font-family: Roboto Condensed;
+    text-decoration: none;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+}
+
+.header-logo {
+  margin-right: auto;
+}
+
+.bag-icon {
+  margin-left: auto;
+}
+
+h1 {
+  font-family: 'Bodoni moda SC';
+  letter-spacing: clamp(0.05em, 1vw, 0.1em);
+  font-weight: 500;
+  line-height: 1.1;
+  color: linear-gradient(to right, #dba901, #e6c35c);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: Roboto Condensed;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--primary-accent-color);
+  position: relative;
+  padding-left: 16px;
+  margin-left: 40px;
+  text-transform: uppercase;
+}
+
+h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--primary-accent-color);
+}
+
+h3 {
+  font-family: 'Bodoni moda SC';
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-color);
+  letter-spacing: 0;
+  max-width: 65ch;
+}
+
+.hero {
+  min-height: 100vh;
+  background: url('./src/assets/product-images/golden-fries.png') center/cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.hero-label,
+.hero-title,
+.hero-text {
+  margin: 50px;
+  line-height: 1.1;
+}
