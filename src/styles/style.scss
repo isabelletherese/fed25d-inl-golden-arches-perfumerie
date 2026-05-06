@@ -1,11 +1,13 @@
-@use 'golden-ratio';
+@use './reset';
+@use './productCards';
+@use './golden-ratio';
 
 :root {
   --background-color: #121212;
-  --text-color: #F5F5F0;
-  --primary-accent-color: #D0AB30;
-  --secondary-accent-color: #A8221E;
-  --progress-bar-color: #2A2A2A;
+  --text-color: #f5f5f0;
+  --primary-accent-color: #d0ab30;
+  --secondary-accent-color: #a8221e;
+  --progress-bar-color: #2a2a2a;
 }
 
 body {
@@ -49,7 +51,7 @@ h1 {
   letter-spacing: clamp(0.05em, 1vw, 0.1em);
   font-weight: 500;
   line-height: 1.1;
-  color: linear-gradient(to right, #DBA901, #E6C35C);
+  color: linear-gradient(to right, #dba901, #e6c35c);
   text-transform: uppercase;
 }
 
@@ -80,11 +82,9 @@ p {
   padding-top: 30px;
 }
 
-.hero-label, 
-.hero-title, 
+.hero-label,
+.hero-title,
 .hero-text {
   margin: 50px;
   line-height: 1.1;
 }
-
-
