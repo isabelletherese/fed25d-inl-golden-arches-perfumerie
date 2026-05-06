@@ -1,5 +1,6 @@
 @use './reset';
 @use './productCards';
+@use './golden-ratio';
 
 :root {
   --background-color: #121212;
@@ -11,6 +12,38 @@
 
 body {
   background-color: var(--background-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--background-color);
+
+  nav {
+    display: flex;
+    gap: 40px;
+  }
+
+  a {
+    font-family: Roboto Condensed;
+    text-decoration: none;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+}
+
+.header-logo {
+  margin-right: auto;
+}
+
+.bag-icon {
+  margin-left: auto;
 }
 
 h1 {
