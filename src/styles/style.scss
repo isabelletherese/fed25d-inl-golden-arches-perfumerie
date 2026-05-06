@@ -56,8 +56,31 @@ h1 {
 }
 
 h2 {
+  font-family: Roboto Condensed;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--primary-accent-color);
+  position: relative;
+  padding-left: 16px;
+  margin-left: 40px;
+  text-transform: uppercase;
+}
+
+h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--primary-accent-color);
+}
+
+h3 {
   font-family: 'Bodoni moda SC';
-  font-size: 64px;
   letter-spacing: 0.03em;
   line-height: 1.2;
   text-transform: uppercase;
