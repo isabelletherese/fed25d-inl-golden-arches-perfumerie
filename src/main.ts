@@ -1,8 +1,15 @@
 import './styles/style.scss';
 
-const cookieBanner = document.querySelector('.cookies');
+const cookieBanner = document.querySelector('.cookies') as HTMLElement;
+const acceptBtn = document.getElementById('accept-btn') as HTMLButtonElement;
+const declineBtn = document.getElementById('decline-btn') as HTMLButtonElement;
 
-document.getElementById('accept-btn')?.addEventListener('click', () => 
-    cookieBanner?.classList.add('hidden'));
-document.getElementById('decline-btn')?.addEventListener('click', () => 
-    cookieBanner?.classList.add('hidden'));
+acceptBtn.addEventListener('click', () => {
+    acceptBtn.classList.add('active');
+    setTimeout(() => cookieBanner.classList.add('hidden'), 300);
+});
+
+declineBtn.addEventListener('click', () => {
+    declineBtn.classList.add('active');
+    setTimeout(() => cookieBanner.classList.add('hidden'), 300);
+});

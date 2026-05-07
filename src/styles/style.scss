@@ -9,6 +9,8 @@
   --primary-accent-color: #d0ab30;
   --secondary-accent-color: #a8221e;
   --progress-bar-color: #2a2a2a;
+  --pressed-btn-yellow-color: #8f6e00;
+  --pressed-btn-white-color: #bebebe;
 }
 
 body {
@@ -175,38 +177,52 @@ p {
     #accept-btn {
       color: var(--primary-accent-color);
       border: 0.5px solid var(--primary-accent-color);
+
+      &:hover {
+        background-color: var(--primary-accent-color);
+        color: var(--background-color);
+      }
+
+      &.active {
+        background-color: var(--pressed-btn-yellow-color);
+        border: 0.5px solid var(--pressed-btn-yellow-color);
+      }
     }
 
     #decline-btn {
       color: var(--text-color);
       border: 0.5px solid var(--text-color);
-    }
-  }
 
-   @media screen and (min-width: 768px) {
-    width: 490px;
-    height: 181px;
-    padding: 20px 10px;
-    left: 50%;
-    transform: translateX(-50%);
+      &:hover {
+        background-color: var(--text-color);
+        color: var(--background-color);
+      }
 
-    h2 {
-      font-size: 32px;
-    }
-
-    p {
-      font-size: 18px;
-    }
-
-    .cookies-btn-container {
-      button {
-        width: 230px;
-        font-size: 28px;
+      &.active {
+        background-color: var(--pressed-btn-white-color);
+        border: 0.5px solid var(--pressed-btn-white-color);
       }
     }
   }
-}
 
-.hidden {
-  display: none;
-}
+    @media screen and (min-width: 768px) {
+      h2 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      .cookies-btn-container {
+        button {
+          width: 230px;
+          font-size: 28px;
+        }
+      }
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
