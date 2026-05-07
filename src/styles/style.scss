@@ -174,7 +174,7 @@ p {
       cursor: pointer;
     }
 
-    #accept-btn {
+    .cookies__btn--accept {
       color: var(--primary-accent-color);
       border: 0.5px solid var(--primary-accent-color);
 
@@ -189,7 +189,7 @@ p {
       }
     }
 
-    #decline-btn {
+    .cookies__btn--decline {
       color: var(--text-color);
       border: 0.5px solid var(--text-color);
 
