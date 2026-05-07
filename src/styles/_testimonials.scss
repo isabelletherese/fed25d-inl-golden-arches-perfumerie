@@ -1,54 +1,112 @@
 .testimonials {
-    padding: 80px 60px 80px 40px;
+  padding: 60px 40px;
+  text-align: center;
+
+  h2 {
+    display: block;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  h3 {
+    font-size: 2.5rem;
     text-align: center;
-
-    h2 {
-        display: block;
-        text-align: left;
-        margin-left: 0;
-    }
-
-    h3 {
-        font-size: 96px;
-        text-align: center;
-        background: linear-gradient(to right, #dba901, #e6c35c);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        letter-spacing: 0.05em;
-    }
+    background: linear-gradient(to right, #dba901, #e6c35c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 0.05em;
+  }
 }
 
 .testimonials-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: left;
-    margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: left;
+  margin-top: 48px;
+  gap: 40px;
 }
 
 .testimonials-card {
-    padding: 0 40px;
-    border-left: 1px solid #D0AB30;
-}
-
-.testimonials-card:first-child {
-    border-left: none;
-    padding-left: 0;
+  padding: 0;
+  border-left: none;
+  text-align: center; 
 }
 
 .testimonials-text {
-    font-style: italic;
-    line-height: 1.7;
-    margin-bottom: 32px;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
 }
 
 .testimonials-name {
-    margin: 0 0 4px 0;
+  margin: 0 0 4px 0;
+  max-width: 100%;
 }
 
 .testimonials-jobs {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin: 0;
+  max-width: 100%;
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonials {
+    padding: 80px 40px;
+
+    h3 {
+      font-size: 3.5rem;
+    }
+  }
+
+  .testimonials-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    margin-top: 60px;
+  }
+
+  .testimonials-card {
+    padding: 0 32px;
+    border-left: 1px solid var(--primary-accent-color);
+    text-align: left;
+
+    &:first-child {
+      border-left: none;
+      padding-left: 0;
+    }
+  }
+
+  .testimonials-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonials {
+    padding: 80px 60px 80px 40px;
+
+    h3 {
+      font-size: 96px;
+    }
+  }
+
+  .testimonials-container {
+    margin-top: 100px;
+  }
+
+  .testimonials-card {
+    padding: 0 40px;
+  }
+
+  .testimonials-text {
+    font-size: 1.3rem;
+    margin-bottom: 32px;
+  }
+
+  .testimonials-jobs {
     font-size: 0.85rem;
-    opacity: 0.6;
-    margin: 0;
-    font-style: italic;
+  }
 }
