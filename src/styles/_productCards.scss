@@ -1,10 +1,10 @@
 .carousel {
-  align-items: center;
+  width: 100%;
 }
 
 .carousel__viewport {
   overflow: hidden;
-  justify-self: center;
+  margin-inline: auto;
   width: 320px;
 }
 
@@ -31,7 +31,7 @@
       filter: grayscale(0%);
     }
   }
-  h3 {
+  h4 {
     color: #d0ab30;
   }
   .product-card__discover-btn {
@@ -91,7 +91,7 @@
   width: 276px;
   height: 188px;
   justify-self: center;
-  h3 {
+  h4 {
     padding: 16px 0;
 
     font-weight: 400;
