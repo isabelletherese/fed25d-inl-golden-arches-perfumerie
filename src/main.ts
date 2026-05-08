@@ -1,7 +1,7 @@
 import './styles/style.scss';
 
 // ----------------------------------------------------------
-// ------------------------ Carousel ------------------------
+// ------------------- Product Carousel ---------------------
 // ----------------------------------------------------------
 
 const carouselTrack = document.querySelector<HTMLDivElement>('#carouselTrack');
@@ -58,7 +58,7 @@ window.addEventListener('resize', () => {
 });
 
 // ----------------------------------------------------------
-// --------------------- Discover Scent ---------------------
+// --------------------- Product Overlay --------------------
 // ----------------------------------------------------------
 
 const toggleOverlayExitBtn = document.querySelectorAll<HTMLButtonElement>('.product-overlay__exit-btn');
@@ -75,3 +75,21 @@ function toggleProductOverlay() {
   const productOverlay = document.querySelector<HTMLDivElement>('#productOverlay');
   productOverlay?.classList.toggle('product-overlay__active');
 }
+
+// ----------------------------------------------------------
+// --------------------- Cookie Banner ----------------------
+// ----------------------------------------------------------
+
+const cookieBanner = document.querySelector('.cookies') as HTMLElement;
+const acceptBtn = document.getElementById('accept-btn') as HTMLButtonElement;
+const declineBtn = document.getElementById('decline-btn') as HTMLButtonElement;
+
+acceptBtn.addEventListener('click', () => {
+    acceptBtn.classList.add('active');
+    setTimeout(() => cookieBanner.classList.add('hidden'), 300);
+});
+
+declineBtn.addEventListener('click', () => {
+    declineBtn.classList.add('active');
+    setTimeout(() => cookieBanner.classList.add('hidden'), 300);
+});
