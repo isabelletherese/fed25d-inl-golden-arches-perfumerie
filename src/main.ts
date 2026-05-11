@@ -9,15 +9,15 @@ const closeIcon = document.querySelector('.close-icon') as HTMLElement;
 const navbar = document.querySelector('.navbar') as HTMLElement;
 
 hamburgerIcon.addEventListener('click', () => {
-    navbar.classList.toggle('open');
-    closeIcon.classList.toggle('visible');
-     document.body.classList.toggle('nav-open');
+  navbar.classList.toggle('open');
+  closeIcon.classList.toggle('visible');
+  document.body.classList.toggle('nav-open');
 });
 
 closeIcon.addEventListener('click', () => {
-    navbar.classList.remove('open');
-    closeIcon.classList.remove('visible');
-    document.body.classList.remove('nav-open');
+  navbar.classList.remove('open');
+  closeIcon.classList.remove('visible');
+  document.body.classList.remove('nav-open');
 });
 
 // ----------------------------------------------------------
@@ -105,11 +105,15 @@ const acceptBtn = document.getElementById('accept-btn') as HTMLButtonElement;
 const declineBtn = document.getElementById('decline-btn') as HTMLButtonElement;
 
 acceptBtn.addEventListener('click', () => {
-    acceptBtn.classList.add('active');
-    setTimeout(() => cookieBanner.classList.add('hidden'), 300);
+  acceptBtn.classList.add('active');
+  setTimeout(() => cookieBanner.classList.add('hidden'), 300);
 });
 
 declineBtn.addEventListener('click', () => {
-    declineBtn.classList.add('active');
-    setTimeout(() => cookieBanner.classList.add('hidden'), 300);
+  declineBtn.classList.add('active');
+  setTimeout(() => cookieBanner.classList.add('hidden'), 300);
 });
+
+// ----------------------------------------------------------
+// ------------------- Animation M-Logo ---------------------
+// ----------------------------------------------------------
