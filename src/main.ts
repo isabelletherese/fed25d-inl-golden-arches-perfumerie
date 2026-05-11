@@ -1,4 +1,6 @@
 import './styles/style.scss';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // ----------------------------------------------------------
 // ------------------- Hamburger Menu -----------------------
@@ -117,3 +119,12 @@ declineBtn.addEventListener('click', () => {
 // ----------------------------------------------------------
 // ------------------- Animation M-Logo ---------------------
 // ----------------------------------------------------------
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from('#animatedBrandLogo', {
+  scrollTrigger: '#animatedBrandLogo',
+  //   rotation: -1440,
+  x: -1000,
+  duration: 4,
+});
