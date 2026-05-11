@@ -234,7 +234,12 @@
 
   &.hidden {
     visibility: hidden;
+    pointer-events: none;
   }
+}
+
+.carousel__right-btn {
+  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) {
