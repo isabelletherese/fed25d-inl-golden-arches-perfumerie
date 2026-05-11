@@ -1,5 +1,6 @@
 @use './reset';
 @use './productCards';
+@use './signature-vault';
 @use './golden-ratio';
 @use './home-page';
 @use './testimonials';
@@ -128,6 +129,7 @@ h2 {
   padding-left: 16px;
   margin-left: 40px;
   text-transform: uppercase;
+  padding: 20px;
 }
 
 h2::before {
