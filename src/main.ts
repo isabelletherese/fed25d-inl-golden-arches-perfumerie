@@ -60,6 +60,10 @@ carouselRightBtn?.addEventListener('click', () => {
 
   carouselRightBtn!.disabled = currentIndex >= getMaxCardIndex();
   carouselLeftBtn!.classList.remove('hidden');
+
+  if (currentIndex >= getMaxCardIndex()) {
+    carouselRightBtn!.classList.add('hidden');
+  }
 });
 
 carouselLeftBtn?.addEventListener('click', () => {
@@ -71,6 +75,10 @@ carouselLeftBtn?.addEventListener('click', () => {
   carouselRightBtn!.disabled = false;
   if (currentIndex === 0) {
     carouselLeftBtn!.classList.add('hidden');
+  }
+
+  if (currentIndex <= getMaxCardIndex()) {
+    carouselRightBtn!.classList.remove('hidden');
   }
 });
 
