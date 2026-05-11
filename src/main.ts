@@ -1,6 +1,26 @@
 import './styles/style.scss';
 
 // ----------------------------------------------------------
+// ------------------- Hamburger Menu -----------------------
+// ----------------------------------------------------------
+
+const hamburgerIcon = document.querySelector('.hamburger-icon') as HTMLElement;
+const closeIcon = document.querySelector('.close-icon') as HTMLElement;
+const navbar = document.querySelector('.navbar') as HTMLElement;
+
+hamburgerIcon.addEventListener('click', () => {
+    navbar.classList.toggle('open');
+    closeIcon.classList.toggle('visible');
+     document.body.classList.toggle('nav-open');
+});
+
+closeIcon.addEventListener('click', () => {
+    navbar.classList.remove('open');
+    closeIcon.classList.remove('visible');
+    document.body.classList.remove('nav-open');
+});
+
+// ----------------------------------------------------------
 // ------------------- Product Carousel ---------------------
 // ----------------------------------------------------------
 
