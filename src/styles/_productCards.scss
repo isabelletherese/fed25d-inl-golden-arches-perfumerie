@@ -1,5 +1,6 @@
 .carousel {
   width: 100%;
+  position: relative;
 }
 
 .carousel__viewport {
@@ -10,17 +11,14 @@
 
 .carousel__track {
   display: flex;
-
   transition: 0.5s ease;
 }
 
 .product-card {
   flex: 0 0 auto;
-
   width: 320px;
   height: 400px;
   padding: 16px;
-
   font-family: 'Roboto Condensed', sans-serif;
   color: var(--text-color);
 }
@@ -207,17 +205,23 @@
 
 .carousel__btn-wrapper {
   display: flex;
-  justify-content: center;
-  padding-top: 8px;
-  padding-bottom: 32px;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  pointer-events: none;
 }
 
 .carousel__left-btn,
 .carousel__right-btn {
   all: unset;
   cursor: pointer;
+  pointer-events: auto;
+  padding-inline: 16px;
 
-  padding-inline: 150px;
   img {
     height: 40px;
   }
@@ -227,15 +231,20 @@
   img {
     transform: rotate(180deg);
   }
+
+  &.hidden {
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.carousel__right-btn {
+  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) {
   .carousel__viewport {
     width: 640px;
-  }
-  .carousel__left-btn,
-  .carousel__right-btn {
-    padding-inline: 300px;
   }
 }
 
@@ -243,18 +252,10 @@
   .carousel__viewport {
     width: 960px;
   }
-  .carousel__left-btn,
-  .carousel__right-btn {
-    padding-inline: 450px;
-  }
 }
 
 @media screen and (min-width: 1400px) {
   .carousel__viewport {
     width: 1280px;
-  }
-  .carousel__left-btn,
-  .carousel__right-btn {
-    padding-inline: 600px;
   }
 }
