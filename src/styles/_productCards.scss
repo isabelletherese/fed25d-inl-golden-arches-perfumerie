@@ -219,7 +219,7 @@
 .carousel__right-btn {
   all: unset;
   cursor: pointer;
-  pointer-events: auto; 
+  pointer-events: auto;
   padding-inline: 16px;
 
   img {
@@ -236,7 +236,6 @@
     visibility: hidden;
   }
 }
-
 
 @media screen and (min-width: 768px) {
   .carousel__viewport {
