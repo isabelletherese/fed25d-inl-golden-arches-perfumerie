@@ -131,14 +131,30 @@ declineBtn.addEventListener('click', () => {
 });
 
 // ----------------------------------------------------------
-// ------------------- Animation M-Logo ---------------------
+// ------------------ Animation Heritage --------------------
 // ----------------------------------------------------------
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from('#animatedBrandLogo', {
-  scrollTrigger: '#animatedBrandLogo',
+gsap.from('#heritageBrandLogo', {
+  scrollTrigger: '#heritage',
   //   rotation: -1440,
-  x: -1000,
-  duration: 4,
+  x: -1500,
+  duration: 1.7,
+});
+
+gsap.from('#heritageHeading', {
+  scrollTrigger: '#heritage',
+  //   rotation: -1440,
+  x: 1500,
+  duration: 1.7,
+  delay: 1,
+});
+
+gsap.from('#heritageInfoText', {
+  scrollTrigger: '#heritage',
+  //   rotation: -1440,
+  x: -1500,
+  duration: 1.7,
+  delay: 2,
 });
