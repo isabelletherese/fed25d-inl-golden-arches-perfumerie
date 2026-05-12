@@ -25,7 +25,8 @@
   color: var(--text-color);
 }
 
-.product-card:hover {
+.product-card:hover,
+.product-card:focus-within {
   .product-card__img {
     img {
       filter: grayscale(0%);
@@ -35,8 +36,8 @@
     color: var(--primary-accent-color);
   }
   .product-card__discover-btn {
-    visibility: visible;
     opacity: 1;
+    pointer-events: auto;
     transform: translateX(0);
   }
 }
@@ -70,8 +71,8 @@
   left: 180px;
   bottom: 70px;
 
-  visibility: hidden;
   opacity: 0;
+  pointer-events: none;
   transform: translateX(-10px);
   transition:
     0.5s ease,
@@ -85,6 +86,10 @@
     color: white;
     padding-left: 5px;
     text-transform: uppercase;
+  }
+  &:focus-visible {
+    outline: 2px solid var(--primary-accent-color);
+    outline-offset: 4px;
   }
 }
 
@@ -131,6 +136,11 @@
       cursor: pointer;
       transition: 0.3s ease;
       text-transform: uppercase;
+
+      &:focus-visible {
+        outline: 2px solid var(--primary-accent-color);
+        outline-offset: 4px;
+      }
     }
 
     .product-card__cta:hover {
@@ -144,11 +154,12 @@
   position: fixed;
   inset: 0;
 
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
   z-index: 1000;
 
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 
   .product-overlay__bg-img {
     position: absolute;
@@ -201,6 +212,11 @@
     top: 32px;
     right: 32px;
 
+    &:focus-visible, &:hover {
+      outline: 2px solid var(--primary-accent-color);
+      outline-offset: 4px;
+    }
+
     svg {
       height: 32px;
     }
@@ -208,6 +224,7 @@
 }
 
 .product-overlay__active {
+  visibility: visible;
   opacity: 1;
   pointer-events: auto;
 }
@@ -230,6 +247,11 @@
   cursor: pointer;
   pointer-events: auto;
   padding-inline: 16px;
+
+  &:focus-visible, &:hover {
+    outline: 2px solid var(--primary-accent-color);
+    outline-offset: 4px;
+  }
 
   img {
     height: 40px;
