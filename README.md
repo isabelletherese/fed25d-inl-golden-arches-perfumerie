@@ -2,7 +2,7 @@
 Beskrivning av projektet och vald teknik.
 
 ## Desktop 
-screenshot 
+<img width="2960" height="7922" alt="Screen Shot 2026-05-12 at 16 34 36-fullpage" src="https://github.com/user-attachments/assets/0a18647c-2e78-4a1d-8127-92617f2f757c" />
 
 ## Tablet 
 screenshot
