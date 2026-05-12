@@ -117,8 +117,8 @@ function toggleProductOverlay() {
 // ----------------------------------------------------------
 
 const cookieBanner = document.querySelector('.cookies') as HTMLElement;
-const acceptBtn = document.getElementById('accept-btn') as HTMLButtonElement;
-const declineBtn = document.getElementById('decline-btn') as HTMLButtonElement;
+const acceptBtn = document.getElementById('acceptBtn') as HTMLButtonElement;
+const declineBtn = document.getElementById('declineBtn') as HTMLButtonElement;
 
 acceptBtn.addEventListener('click', () => {
   acceptBtn.classList.add('active');

@@ -1,315 +1,343 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/svg/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/src/assets/svg/logo.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golden Arches Parfumerie</title>
+  </head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>cmyk-kodar-mcdonalds</title>
-</head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <img src="src/assets/svg/logo-woodmark.svg" alt="" class="header-logo" />
+      <img src="src/assets/svg/hamburger-menu-mobile.svg" alt="" class="hamburger-icon" />
+      <img src="src/assets/svg/logo.svg" alt="" class="mobile-logo" />
 
-<body>
-  <!-- HEADER -->
-  <header>
-    <img src="src/assets/svg/logo-woodmark.svg" alt="" class="header-logo" />
-    <img src="src/assets/svg/hamburger-menu-mobile.svg" alt="" class="hamburger-icon">
-    <img src="src/assets/svg/logo.svg" alt="" class="mobile-logo">
-
-    <div class="navbar">
-      <img src="src/assets/svg/logo.svg" alt="" class="navbar-logo">
-      <img src="src/assets/svg/close.svg" alt="" class="close-icon">
-      <nav>
-        <a href="#collection">Collection</a>
-        <a href="#heritage">The Heritage</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-    <img src="src/assets/svg/shopping-bag.svg" alt="" class="bag-icon" />
-  </header>
-  <main>
-    <!-- Cookies -->
-    <div class="cookies">
-      <h2>We use cookies</h2>
-      <p>We use cookies to improve your experience.
-        <span>By continuing, you agree to our use of cookies.</span>
-      </p>
-      <div class="cookies-btn-container">
-        <button type="button" class="cookies__btn--accept" id="accept-btn">Accept</button>
-        <button type="button" class="cookies__btn--decline" id="decline-btn">Decline</button>
+      <div class="navbar">
+        <img src="src/assets/svg/logo.svg" alt="" class="navbar-logo" />
+        <img src="src/assets/svg/close.svg" alt="" class="close-icon" />
+        <nav>
+          <a href="#collection">Collection</a>
+          <a href="#heritage">The Heritage</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
-    </div>
+      <img src="src/assets/svg/shopping-bag.svg" alt="" class="bag-icon" />
+    </header>
 
-    <!-- HERO -->
-    <section class="hero">
-      <img class="hero-img" src="src/assets/product-images/golden-fries.png" alt="" />
-      <div class="hero-content">
-        <p class="hero-label">L'essence de l'arche</p>
-        <h1 class="hero-title">Smell like <span>success</span></h1>
-        <p class="hero-text">A refined fragrance inspired by the unmistakable allure of golden perfection.</p>
-      </div>
-    </section>
-
-    <!-- The Signature Vault -->
-
-    <section class="products" id="collection">
-      <div class="signature-vault">
-        <h2>The golden collection</h2>
-        <h3>The signature Vault</h3>
-        <div class="signature-vault-text-wrapper">
-          <p>A curated selection of scents, each inspired by a familiar indulgence - reimagined trough a lens of modern
-            perfumery.</p>
-          <div class="signature-vault-release">
-            <h4>Release 003</h4>
-            <p class="availability">Limited Availability</p>
-          </div>
-        </div>
-      </div>
-      <!-- Karusell -->
-      <div class="carousel">
-        <div class="carousel__viewport">
-          <div class="carousel__track" id="carouselTrack">
-            <article class="product-card">
-              <div class="product-card__img">
-                <img src="./src/assets/product-images/big-mac-noir.png"
-                  alt="Flaska i glas med parfym föreställande en Big Mac" />
-                <div class="product-card__discover-container">
-                  <button class="product-card__discover-btn" type="button"><img
-                      src="./src/assets/svg/go-to-fragrance.svg" alt=""><span>DISCOVER</span>
-                  </button>
-                </div>
-              </div>
-              <div class="product-card__info">
-                <h4>Big Mac <br><span class="italic-300">Noir</span></h4>
-                <p>Smoky sesame, rare oud, and a hint of caramelized onion</p>
-                <div>
-                  <span class="product-card__price">$310.00</span>
-                  <button class="product-card__cta" type="button">ADD TO BAG</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-card__img"><img src="./src/assets/product-images/eau-de-fries.png"
-                  alt="Flaska i glas med parfym föreställande en kartong med Pommes Frites">
-                <div class="product-card__discover-container">
-                  <button class="product-card__discover-btn" type="button"><img
-                      src="./src/assets/svg/go-to-fragrance.svg" alt=""><span>DISCOVER</span>
-                  </button>
-                </div>
-              </div>
-              <div class="product-card__info">
-                <h4>Eau de <br><span class="italic-300">Fries</span></h4>
-                <p>Top notes of salted sea air with a
-                  heart of golden starch and warm oil.</p>
-                <div>
-                  <span class="product-card__price">$245.00</span>
-                  <button class="product-card__cta" type="button">ADD TO BAG</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-card__img"><img src="./src/assets/product-images/mc-muffin-diffuser.png"
-                  alt="Liten fyrkantig flaska i glas med parfymstickor som sticker ur">
-                <div class="product-card__discover-container">
-                  <button class="product-card__discover-btn" type="button"><img
-                      src="./src/assets/svg/go-to-fragrance.svg" alt=""><span>DISCOVER</span>
-                  </button>
-                </div>
-              </div>
-              <div class="product-card__info">
-                <h4>Mc’Muffin <br><span class="italic-300">Morning Diffuser</span></h4>
-                <p>Savory muffin warmth, golden egg accord, and a whisper of toasted butter.</p>
-                <div>
-                  <span class="product-card__price">$70.00</span>
-                  <button class="product-card__cta" type="button">ADD TO BAG</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-card__img"><img src="./src/assets/product-images/baked-apple-pie-lotion.png"
-                  alt="Flaska i glas med pump som innehåller Baked Apple Pie Lotion">
-                <div class="product-card__discover-container">
-                  <button class="product-card__discover-btn" type="button"><img
-                      src="./src/assets/svg/go-to-fragrance.svg" alt=""><span>DISCOVER</span>
-                  </button>
-                </div>
-              </div>
-              <div class="product-card__info">
-                <h4>Baked Apple Pie <br><span class="italic-300">Body Lotion</span></h4>
-                <p>A soft, nourishing blend of baked sweetness and
-                  gentle, warm caramelized apple.
-                </p>
-                <div>
-                  <span class="product-card__price">$90.00</span>
-                  <button class="product-card__cta" type="button">ADD TO BAG</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-card__img"><img src="./src/assets/product-images/the-happy-collection.png"
-                  alt="Svart låda med guldband och företagets logga i guld">
-                <div class="product-card__discover-container">
-                  <button class="product-card__discover-btn" type="button"><img
-                      src="./src/assets/svg/go-to-fragrance.svg" alt=""><span>DISCOVER</span>
-                  </button>
-                </div>
-              </div>
-              <div class="product-card__info">
-                <h4>Happy Collection <br><span class="italic-300">Mystery Box</span></h4>
-                <p>A carefully composed selection of signature scents,
-                  brought together in a limited collection of modern indulgence.</p>
-                <div>
-                  <span class="product-card__price">$510.00</span>
-                  <button class="product-card__cta" type="button">ADD TO BAG</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-card__img"><img src="./src/assets/product-images/soft-serve-cloud-mist.png"
-                  alt="Genomskinlig glasflaska med spraypump innehållande body-mist">
-                <div class="product-card__discover-container">
-                  <button class="product-card__discover-btn" type="button"><img
-                      src="./src/assets/svg/go-to-fragrance.svg" alt=""><span>DISCOVER</span>
-                  </button>
-                </div>
-              </div>
-              <div class="product-card__info">
-                <h4>Soft Serve <br><span class="italic-300">Cloud Mist</span></h4>
-                <p>A delicate mist of soft sweetness and whipped
-                  warmth, with a smooth, cloud-like finish.</p>
-                <div>
-                  <span class="product-card__price">$35.00</span>
-                  <button class="product-card__cta" type="button">ADD TO BAG</button>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="carousel__btn-wrapper">
-          <button type="button" class="carousel__left-btn" id="carouselLeftBtn" aria-label="toggle left"><img
-              src="./src/assets/svg/product-section-arrow.svg" alt=""></button>
-          <button type="button" class="carousel__right-btn" id="carouselRightBtn" aria-label="toggle right"><img
-              src="./src/assets/svg/product-section-arrow.svg" alt=""></button>
-        </div>
-      </div>
-
-      <!-- Overlay -->
-      <div class="product-overlay" id="productOverlay">
-
-        <img class="product-overlay__bg-img" src="./src/assets/product-images/big-mac-noir.png" alt="">
-        <h4>Big Mac <br><span class="italic-300">Noir</span></h4>
-
-        <img class="product-overlay__fragrance-profile" src="./src/assets/product-images/fragrance-profile-big-mac.png"
-          alt="">
-        <button class="product-overlay__exit-btn" type="button" aria-label="close overlay">
-          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-            <path
-              d="M9.6 28.5L7.5 26.4L15.9 18L7.5 9.6L9.6 7.5L18 15.9L26.4 7.5L28.5 9.6L20.1 18L28.5 26.4L26.4 28.5L18 20.1L9.6 28.5Z"
-              fill="#D0AB30" />
-          </svg>
-        </button>
-      </div>
-    </section>
-
-    <!-- The Golden Ratio of Scent -->
-    <section class="golden-ratio" id="heritage">
-      <h2>Our Heritage</h2>
-      <div class="logo-wrapper" id="heritageBrandLogo">
-        <img src="src/assets/svg/logo.svg" alt="logotyp med gul bokstav m" />
-      </div>
-
-      <h3 id="heritageHeading">The Golden Ratio <span>of Scent</span></h3>
-      <div>
-        <p class="golden-ratio-text" id="heritageInfoText">
-          "Luxury is not just seen, it is sensed. We have taken the most recognized symbols of comfort and elevated
-          them to the altar of high perfumery."
+    <main>
+      <!-- Cookies -->
+      <div class="cookies">
+        <h2>We use cookies</h2>
+        <p>
+          We use cookies to improve your experience.
+          <span>By continuing, you agree to our use of cookies.</span>
         </p>
-      </div>
-
-      <div class="city-btn-container">
-        <button class="city">Paris</button>
-        <button class="city">New York</button>
-        <button class="city">Stockholm</button>
-      </div>
-    </section>
-
-    <!-- We Loving It -->
-    <section class="testimonials" id="testimonials">
-      <h2>Testimonials</h2>
-      <h3>We Lovin' It</h3>
-      <div class="testimonials-container">
-        <div class="testimonials-card">
-          <p class="testimonials-text">
-            “I use the Mc'Muffin Morning Diffuser every morning to set the mood for the day, it also makes the dogs in
-            the neighborhood really like me for some reason.”
-          </p>
-          <p class="testimonials-name">Vincent</p>
-          <p class="testimonials-jobs">professional train spotter</p>
-        </div>
-        <div class="testimonials-card">
-          <p class="testimonials-text">
-            “I wore Big Mac Noir to a funeral and got three compliments and one phone number. I'm still not sure how
-            to feel about that.”
-          </p>
-          <p class="testimonials-name">Henrik</p>
-          <p class="testimonials-jobs">ethics lecturer</p>
-        </div>
-        <div class="testimonials-card">
-          <p class="testimonials-text">
-            “I wore Eau de Fries once and a seagull followed me for 45 minutes. I've accepted this as part of my
-            identity now.”
-          </p>
-          <p class="testimonials-name">Daniel</p>
-          <p class="testimonials-jobs">coastal architect</p>
+        <div class="cookies-btn-container">
+          <button type="button" class="cookies__btn--accept" id="acceptBtn">Accept</button>
+          <button type="button" class="cookies__btn--decline" id="declineBtn">Decline</button>
         </div>
       </div>
-    </section>
-  </main>
 
-  <!-- Footer -->
-  <footer id="contact">
-    <h2>Contact</h2>
+      <!-- HERO -->
+      <section class="hero">
+        <img class="hero-img" src="src/assets/product-images/golden-fries.png" alt="" />
+        <div class="hero-content">
+          <p class="hero-label">L'essence de l'arche</p>
+          <h1 class="hero-title">Smell like <span>success</span></h1>
+          <p class="hero-text">A refined fragrance inspired by the unmistakable allure of golden perfection.</p>
+        </div>
+      </section>
 
-    <div class="footer__content">
-      <div>
-        <p>Golden arches parfumerie</p>
-        <p>&copy; 2026</p>
+      <!-- The Signature Vault -->
+      <section class="products" id="collection">
+        <div class="signature-vault">
+          <h2>The golden collection</h2>
+          <h3>The signature Vault</h3>
+          <div class="signature-vault-text-wrapper">
+            <p>
+              A curated selection of scents, each inspired by a familiar indulgence - reimagined through a lens of
+              modern perfumery.
+            </p>
+            <div class="signature-vault-release">
+              <h4>Release 003</h4>
+              <p class="availability">Limited Availability</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel -->
+        <div class="carousel">
+          <div class="carousel__viewport">
+            <div class="carousel__track" id="carouselTrack">
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="./src/assets/product-images/big-mac-noir.png"
+                    alt="Flaska i glas med parfym föreställande en Big Mac"
+                  />
+                  <div class="product-card__discover-container">
+                    <button class="product-card__discover-btn" type="button">
+                      <img src="./src/assets/svg/go-to-fragrance.svg" alt="" /><span>Discover</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-card__info">
+                  <h4>Big Mac <br /><span class="italic-300">Noir</span></h4>
+                  <p>Smoky sesame, rare oud, and a hint of caramelized onion</p>
+                  <div>
+                    <span class="product-card__price">$310.00</span>
+                    <button class="product-card__cta" type="button">Add to bag</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="./src/assets/product-images/eau-de-fries.png"
+                    alt="Flaska i glas med parfym föreställande en kartong med Pommes Frites"
+                  />
+                  <div class="product-card__discover-container">
+                    <button class="product-card__discover-btn" type="button">
+                      <img src="./src/assets/svg/go-to-fragrance.svg" alt="" /><span>Discover</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-card__info">
+                  <h4>Eau de <br /><span class="italic-300">Fries</span></h4>
+                  <p>Top notes of salted sea air with a heart of golden starch and warm oil.</p>
+                  <div>
+                    <span class="product-card__price">$245.00</span>
+                    <button class="product-card__cta" type="button">Add to bag</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="./src/assets/product-images/mc-muffin-diffuser.png"
+                    alt="Liten fyrkantig flaska i glas med parfymstickor som sticker ur"
+                  />
+                  <div class="product-card__discover-container">
+                    <button class="product-card__discover-btn" type="button">
+                      <img src="./src/assets/svg/go-to-fragrance.svg" alt="" /><span>Discover</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-card__info">
+                  <h4>Mc'Muffin <br /><span class="italic-300">Morning Diffuser</span></h4>
+                  <p>Savory muffin warmth, golden egg accord, and a whisper of toasted butter.</p>
+                  <div>
+                    <span class="product-card__price">$70.00</span>
+                    <button class="product-card__cta" type="button">Add to bag</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="./src/assets/product-images/baked-apple-pie-lotion.png"
+                    alt="Flaska i glas med pump som innehåller Baked Apple Pie Lotion"
+                  />
+                  <div class="product-card__discover-container">
+                    <button class="product-card__discover-btn" type="button">
+                      <img src="./src/assets/svg/go-to-fragrance.svg" alt="" /><span>Discover</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-card__info">
+                  <h4>Baked Apple Pie <br /><span class="italic-300">Body Lotion</span></h4>
+                  <p>A soft, nourishing blend of baked sweetness and gentle, warm caramelized apple.</p>
+                  <div>
+                    <span class="product-card__price">$90.00</span>
+                    <button class="product-card__cta" type="button">Add to bag</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="./src/assets/product-images/the-happy-collection.png"
+                    alt="Svart låda med guldband och företagets logga i guld"
+                  />
+                  <div class="product-card__discover-container">
+                    <button class="product-card__discover-btn" type="button">
+                      <img src="./src/assets/svg/go-to-fragrance.svg" alt="" /><span>Discover</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-card__info">
+                  <h4>Happy Collection <br /><span class="italic-300">Mystery Box</span></h4>
+                  <p>
+                    A carefully composed selection of signature scents, brought together in a limited collection of
+                    modern indulgence.
+                  </p>
+                  <div>
+                    <span class="product-card__price">$510.00</span>
+                    <button class="product-card__cta" type="button">Add to bag</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__img">
+                  <img
+                    src="./src/assets/product-images/soft-serve-cloud-mist.png"
+                    alt="Genomskinlig glasflaska med spraypump innehållande body-mist"
+                  />
+                  <div class="product-card__discover-container">
+                    <button class="product-card__discover-btn" type="button">
+                      <img src="./src/assets/svg/go-to-fragrance.svg" alt="" /><span>Discover</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-card__info">
+                  <h4>Soft Serve <br /><span class="italic-300">Cloud Mist</span></h4>
+                  <p>A delicate mist of soft sweetness and whipped warmth, with a smooth, cloud-like finish.</p>
+                  <div>
+                    <span class="product-card__price">$35.00</span>
+                    <button class="product-card__cta" type="button">Add to bag</button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="carousel__btn-wrapper">
+            <button type="button" class="carousel__left-btn" id="carouselLeftBtn" aria-label="toggle left">
+              <img src="./src/assets/svg/product-section-arrow.svg" alt="" />
+            </button>
+            <button type="button" class="carousel__right-btn" id="carouselRightBtn" aria-label="toggle right">
+              <img src="./src/assets/svg/product-section-arrow.svg" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Overlay -->
+        <div class="product-overlay" id="productOverlay">
+          <img class="product-overlay__bg-img" src="./src/assets/product-images/big-mac-noir.png" alt="" />
+          <h4>Big Mac <br /><span class="italic-300">Noir</span></h4>
+
+          <img
+            class="product-overlay__fragrance-profile"
+            src="./src/assets/product-images/fragrance-profile-big-mac.png"
+            alt=""
+          />
+          <button class="product-overlay__exit-btn" type="button" aria-label="close overlay">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+              <path
+                d="M9.6 28.5L7.5 26.4L15.9 18L7.5 9.6L9.6 7.5L18 15.9L26.4 7.5L28.5 9.6L20.1 18L28.5 26.4L26.4 28.5L18 20.1L9.6 28.5Z"
+                fill="#D0AB30"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- The Golden Ratio of Scent -->
+      <section class="golden-ratio" id="heritage">
+        <h2>Our Heritage</h2>
+        <div class="logo-wrapper" id="heritageBrandLogo">
+          <img src="src/assets/svg/logo.svg" alt="logotyp med gul bokstav m" />
+        </div>
+
+        <h3 id="heritageHeading">The Golden Ratio <span>of Scent</span></h3>
+        <div>
+          <p class="golden-ratio-text" id="heritageInfoText">
+            "Luxury is not just seen, it is sensed. We have taken the most recognized symbols of comfort and elevated
+            them to the altar of high perfumery."
+          </p>
+        </div>
+
+        <div class="city-btn-container">
+          <button class="city">Paris</button>
+          <button class="city">New York</button>
+          <button class="city">Stockholm</button>
+        </div>
+      </section>
+
+      <!-- We Loving It -->
+      <section class="testimonials" id="testimonials">
+        <h2>Testimonials</h2>
+        <h3>We Lovin' It</h3>
+        <div class="testimonials-container">
+          <div class="testimonials-card">
+            <p class="testimonials-text">
+              “I use the Mc'Muffin Morning Diffuser every morning to set the mood for the day, it also makes the dogs in
+              the neighborhood really like me for some reason.”
+            </p>
+            <p class="testimonials-name">Vincent</p>
+            <p class="testimonials-jobs">professional train spotter</p>
+          </div>
+          <div class="testimonials-card">
+            <p class="testimonials-text">
+              “I wore Big Mac Noir to a funeral and got three compliments and one phone number. I'm still not sure how
+              to feel about that.”
+            </p>
+            <p class="testimonials-name">Henrik</p>
+            <p class="testimonials-jobs">ethics lecturer</p>
+          </div>
+          <div class="testimonials-card">
+            <p class="testimonials-text">
+              “I wore Eau de Fries once and a seagull followed me for 45 minutes. I've accepted this as part of my
+              identity now.”
+            </p>
+            <p class="testimonials-name">Daniel</p>
+            <p class="testimonials-jobs">coastal architect</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <h2>Contact</h2>
+
+      <div class="footer__content">
+        <div>
+          <p>Golden arches parfumerie</p>
+          <p>&copy; 2026</p>
+        </div>
+
+        <nav class="footer__nav">
+          <a href="#">Products</a>
+          <a href="#">About</a>
+          <a href="#">Privacy</a>
+          <a href="#">Contact</a>
+        </nav>
+
+        <div class="footer__contact">
+          <p>info@golden.com</p>
+          <p>+46 70 999 66 88</p>
+        </div>
       </div>
 
-      <nav class="footer__nav">
-        <a href="#">Products</a>
-        <a href="#">About</a>
-        <a href="#">Privacy</a>
-        <a href="#">Contact</a>
-      </nav>
+      <!-- Nyhetsbrev -->
+      <section class="newsletter">
+        <h3 class="newsletter__title">Join Our Newsletter</h3>
+        <p>Be the first to discover new releases and exclusive offers.</p>
 
-      <div class="footer__contact">
-        <p>Info@golden.com</p>
-        <p>+46 70 999 66 88</p>
-      </div>
-    </div>
+        <form class="newsletter__form">
+          <input type="email" placeholder="name@domain.com" required />
+          <button type="submit">Subscribe</button>
+        </form>
 
-    <!-- Nyhetsbrev -->
-    <section class="newsletter">
-      <h3 class="newsletter__title">Join Our Newsletter</h3>
-      <p>Be the first to discover new releases and exclusive offers.</p>
+        <p>No spam. Unsubscribe anytime.</p>
+      </section>
+    </footer>
 
-      <form class="newsletter__form">
-        <input type="email" placeholder="name@domain.com" required>
-        <button type="submit">Subscribe</button>
-      </form>
-
-      <p>No spam. Unsubscribe anytime.</p>
-    </section>
-  </footer>
-
-  <script type="module" src="./src/main.ts"></script>
-</body>
-
+    <script type="module" src="./src/main.ts"></script>
+  </body>
 </html>
