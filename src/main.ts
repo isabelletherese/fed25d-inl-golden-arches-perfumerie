@@ -52,6 +52,26 @@ function getMaxCardIndex() {
 
 const movement = 320;
 
+function updateCarouselAccessibility() {
+  const visibleCards = getVisibleProductCards();
+  productCards.forEach((card, index) => {
+    if (index >= currentIndex && index < currentIndex + visibleCards) {
+      card.removeAttribute('inert');
+      card.inert = false;
+    } else {
+      card.setAttribute('inert', '');
+      card.inert = true;
+    }
+  });
+}
+
+const viewport = document.querySelector('.carousel__viewport') as HTMLElement;
+viewport?.addEventListener('scroll', () => {
+  viewport.scrollLeft = 0;
+});
+
+updateCarouselAccessibility();
+
 carouselRightBtn?.addEventListener('click', () => {
   if (currentIndex >= getMaxCardIndex()) return;
   currentIndex++;
@@ -64,6 +84,8 @@ carouselRightBtn?.addEventListener('click', () => {
   if (currentIndex >= getMaxCardIndex()) {
     carouselRightBtn!.classList.add('hidden');
   }
+  
+  updateCarouselAccessibility();
 });
 
 carouselLeftBtn?.addEventListener('click', () => {
@@ -80,6 +102,8 @@ carouselLeftBtn?.addEventListener('click', () => {
   if (currentIndex <= getMaxCardIndex()) {
     carouselRightBtn!.classList.remove('hidden');
   }
+  
+  updateCarouselAccessibility();
 });
 
 window.addEventListener('resize', () => {
@@ -91,6 +115,8 @@ window.addEventListener('resize', () => {
   if (currentIndex === 0) {
     carouselLeftBtn!.classList.add('hidden');
   }
+  
+  updateCarouselAccessibility();
 });
 
 // ----------------------------------------------------------
@@ -107,9 +133,20 @@ toggleOverlayDiscoverBtn.forEach(btn => {
   btn.addEventListener('click', toggleProductOverlay);
 });
 
+let lastFocusedElement: HTMLElement | null = null;
+
 function toggleProductOverlay() {
   const productOverlay = document.querySelector<HTMLDivElement>('#productOverlay');
-  productOverlay?.classList.toggle('product-overlay__active');
+  const isActive = productOverlay?.classList.toggle('product-overlay__active');
+  
+  if (isActive) {
+    lastFocusedElement = document.activeElement as HTMLElement;
+    const exitBtn = productOverlay?.querySelector<HTMLButtonElement>('.product-overlay__exit-btn');
+    setTimeout(() => exitBtn?.focus(), 50);
+  } else {
+    lastFocusedElement?.focus();
+    lastFocusedElement = null;
+  }
 }
 
 // ----------------------------------------------------------
