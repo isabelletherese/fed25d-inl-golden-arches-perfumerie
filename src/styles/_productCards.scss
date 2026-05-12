@@ -82,6 +82,7 @@
   span {
     color: white;
     padding-left: 5px;
+    text-transform: uppercase;
   }
 }
 
@@ -126,6 +127,7 @@
     .product-card__cta {
       all: unset;
       cursor: pointer;
+      text-transform: uppercase;
     }
   }
 }
