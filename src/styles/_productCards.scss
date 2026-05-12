@@ -32,7 +32,7 @@
     }
   }
   h4 {
-    color: #d0ab30;
+    color: var(--primary-accent-color);
   }
   .product-card__discover-btn {
     visibility: visible;
@@ -84,6 +84,7 @@
   span {
     color: white;
     padding-left: 5px;
+    text-transform: uppercase;
   }
 }
 
@@ -129,10 +130,12 @@
       all: unset;
       cursor: pointer;
       transition: 0.3s ease;
+      text-transform: uppercase;
     }
 
     .product-card__cta:hover {
       color: var(--primary-accent-color);
+      
     }
   }
 }
@@ -170,7 +173,6 @@
     font-weight: 400;
     font-size: 2rem;
     color: var(--primary-accent-color);
-    // text-shadow: 2px 2px 2px var(--background-color);
 
     .italic-300 {
       font-style: italic;
