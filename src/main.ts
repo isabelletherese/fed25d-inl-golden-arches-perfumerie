@@ -117,8 +117,8 @@ function toggleProductOverlay() {
 // ----------------------------------------------------------
 
 const cookieBanner = document.querySelector('.cookies') as HTMLElement;
-const acceptBtn = document.getElementById('accept-btn') as HTMLButtonElement;
-const declineBtn = document.getElementById('decline-btn') as HTMLButtonElement;
+const acceptBtn = document.getElementById('acceptBtn') as HTMLButtonElement;
+const declineBtn = document.getElementById('declineBtn') as HTMLButtonElement;
 
 acceptBtn.addEventListener('click', () => {
   acceptBtn.classList.add('active');
@@ -138,14 +138,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.from('#heritageBrandLogo', {
   scrollTrigger: '#heritage',
-  //   rotation: -1440,
   x: -1500,
   duration: 1.7,
 });
 
 gsap.from('#heritageHeading', {
   scrollTrigger: '#heritage',
-  //   rotation: -1440,
   x: 1500,
   duration: 1.7,
   delay: 1,
@@ -153,7 +151,6 @@ gsap.from('#heritageHeading', {
 
 gsap.from('#heritageInfoText', {
   scrollTrigger: '#heritage',
-  //   rotation: -1440,
   x: -1500,
   duration: 1.7,
   delay: 2,
