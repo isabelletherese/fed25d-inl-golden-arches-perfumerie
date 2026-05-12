@@ -1,108 +1,111 @@
 .footer__content {
-    font-family: 'Roboto Condensed', sans-serif;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin-top: 3rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 3rem;
 
-    p {
-        color: var(--primary-accent-color);
-        font-size: 1rem;
-        margin: 0 3rem;
-    }
+  p {
+    color: var(--primary-accent-color);
+    font-size: 1rem;
+    margin: 0 3rem;
+  }
 }
 
 .footer__nav {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 
-    a {
-        text-decoration: none;
-        color: var(--primary-accent-color);
-        font-weight: 300;
-    }
+  a {
+    text-decoration: none;
+    color: var(--primary-accent-color);
+    font-weight: 300;
+  }
 }
 
 .newsletter {
-    margin: 3rem auto;
-    max-width: 700px;
-    border: 2px solid var(--primary-accent-color);
-    padding: 0.5rem;
+  margin: 3rem auto;
+  max-width: 700px;
+  border: 2px solid var(--primary-accent-color);
+  padding: 0.5rem;
 
-    h3 {
-        font-family: 'Bodoni moda SC', serif;
-        font-size: 1.7rem;
-        letter-spacing: 0.03em;
-        line-height: 1.2;
-        color: var(--primary-accent-color);
-        margin-top: 0.3rem;
-    }
+  h3 {
+    font-family: 'Bodoni Moda SC', serif;
+    font-size: 1.7rem;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    color: var(--primary-accent-color);
+    margin-top: 0.3rem;
+  }
 
-    p {
-        margin: 1rem 0 0.3rem 0;
-        text-transform: uppercase;
-        font-size: 0.9rem;
-        letter-spacing: 0.05em;
-    }
+  p {
+    margin: 1rem 0 0.3rem 0;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+  }
 }
 
 .newsletter__form {
-    display: flex;
-    gap: 10px;
-    width: 100%;
+  display: flex;
+  gap: 10px;
+  width: 100%;
 
-    input {
-        flex: 1;
-        min-width: 0;
-        border: none;
-        outline: none;
-        padding: 0.5rem;
+  input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
 
-        &:focus {
-            outline: 3px solid var(--primary-accent-color);
-        }
+    &:focus {
+      outline: 3px solid var(--primary-accent-color);
     }
+  }
 
-    button {
-        font-family: 'Cormorant', serif;
-        font-size: 1.5rem;
-        flex: 1;
-        min-width: 0;
-        background-color: var(--background-color);
-        color: var(--primary-accent-color);
-        border: 1px solid var(--primary-accent-color);
-        transition: background-color 0.3s, color 0.3s;
-        cursor: pointer;
+  button {
+    font-family: 'Cormorant', serif;
+    font-size: 1.5rem;
+    flex: 1;
+    min-width: 0;
+    background-color: var(--background-color);
+    color: var(--primary-accent-color);
+    border: 1px solid var(--primary-accent-color);
+    transition:
+      background-color 0.3s,
+      color 0.3s;
+    cursor: pointer;
 
-        &:hover {
-            background-color: var(--primary-accent-color);
-            color: var(--background-color);
-        }
+    &:hover {
+      background-color: var(--primary-accent-color);
+      color: var(--background-color);
     }
+  }
 }
 
-@media (max-width: 768px) {
-    .footer__content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+@media screen and (max-width: 768px) {
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
-        p {
-            margin: 1rem 0;
-        }
+    p {
+      margin: 1rem 0;
     }
+  }
 
-    .newsletter {
-        width: 95%;
+  .newsletter {
+    width: 95%;
 
-        .newsletter__form {
-            flex-direction: column;
+    .newsletter__form {
+      flex-direction: column;
 
-            input, button {
-                width: 100%;
-                padding: 1rem;
-            }
-        }
+      input,
+      button {
+        width: 100%;
+        padding: 1rem;
+      }
     }
+  }
 }

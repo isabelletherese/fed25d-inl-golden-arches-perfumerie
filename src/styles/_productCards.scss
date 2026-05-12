@@ -30,7 +30,7 @@
     }
   }
   h4 {
-    color: #d0ab30;
+    color: var(--primary-accent-color);
   }
   .product-card__discover-btn {
     visibility: visible;
@@ -165,7 +165,6 @@
     font-weight: 400;
     font-size: 2rem;
     color: var(--primary-accent-color);
-    // text-shadow: 2px 2px 2px var(--background-color);
 
     .italic-300 {
       font-style: italic;
