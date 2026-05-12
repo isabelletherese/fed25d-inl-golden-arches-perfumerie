@@ -137,21 +137,31 @@ declineBtn.addEventListener('click', () => {
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.from('#heritageBrandLogo', {
-  scrollTrigger: '#heritage',
+  scrollTrigger: '#heritageBrandLogo',
+  //   rotation: -1440,
   x: -1500,
   duration: 1.7,
 });
 
 gsap.from('#heritageHeading', {
-  scrollTrigger: '#heritage',
+  scrollTrigger: '#heritageHeading',
+  //   rotation: -1440,
   x: 1500,
   duration: 1.7,
   delay: 1,
 });
 
 gsap.from('#heritageInfoText', {
-  scrollTrigger: '#heritage',
+  scrollTrigger: '#heritageInfoText',
+  //   rotation: -1440,
   x: -1500,
   duration: 1.7,
   delay: 2,
+});
+
+gsap.from('#cityBtnContainer', {
+  scrollTrigger: '#cityBtnContainer',
+  opacity: 0,
+  delay: 4,
+  duration: 0.7,
 });
