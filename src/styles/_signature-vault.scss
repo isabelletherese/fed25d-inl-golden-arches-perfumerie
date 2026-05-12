@@ -30,6 +30,7 @@
   flex-direction: column;
   gap: 40px;
   width: 100%;
+  padding: 20px;
 
   p {
     font-size: 16px;
@@ -49,14 +50,14 @@
     line-height: 1.4;
     letter-spacing: 0.32em;
     color: var(--primary-accent-color);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .availability {
     font-weight: 300;
     line-height: 1.4;
     letter-spacing: 0.02em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 

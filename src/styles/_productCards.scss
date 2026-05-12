@@ -1,6 +1,8 @@
 .carousel {
   width: 100%;
   position: relative;
+  padding-top: 64px;
+  padding-bottom: 80px;
 }
 
 .carousel__viewport {
@@ -126,6 +128,11 @@
     .product-card__cta {
       all: unset;
       cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .product-card__cta:hover {
+      color: var(--primary-accent-color);
     }
   }
 }

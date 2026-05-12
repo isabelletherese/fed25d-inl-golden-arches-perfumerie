@@ -56,7 +56,30 @@ header {
     text-decoration: none;
     color: var(--text-color);
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
+    transition: ease 0.3s;
+    position: relative;
+  }
+
+  a:hover {
+    color: var(--primary-accent-color);
+  }
+
+  a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    width: 0;
+    height: 2px;
+
+    background: #d0ab30;
+    transition: width 0.3s ease;
+  }
+
+  a:hover::after {
+    width: 100%;
   }
 
   .hamburger-icon {
@@ -141,6 +164,7 @@ h2 {
   margin-left: 40px;
   text-transform: uppercase;
   padding: 20px;
+  margin-bottom: 32px;
 }
 
 h2::before {
@@ -161,6 +185,7 @@ h3 {
   letter-spacing: 0.03em;
   line-height: 1.2;
   text-transform: uppercase;
+  padding: 20px;
 }
 
 p {
