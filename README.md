@@ -1,5 +1,14 @@
 # About the project
+Beskrivning av projektet och vald teknik.
 
+## Desktop 
+screenshot 
+
+## Tablet 
+screenshot
+
+## Mobile 
+screenshot 
 
 # About the design
 This project is based on the concept: What if McDonald’s created luxury perfumes?
