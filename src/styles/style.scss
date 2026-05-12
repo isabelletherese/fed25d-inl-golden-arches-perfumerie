@@ -52,7 +52,7 @@ header {
   background-color: var(--background-color);
 
   a {
-    font-family: Roboto Condensed;
+    font-family: 'Roboto Condensed';
     text-decoration: none;
     color: var(--text-color);
     text-transform: uppercase;
@@ -124,6 +124,20 @@ header {
     &.visible {
       display: block;
     }
+
+    &:hover,
+    &:focus-visible {
+      outline: 2px solid var(--primary-accent-color);
+      outline-offset: 4px;
+    }
+  }
+
+  .hamburger-icon:hover,
+  .hamburger-icon:focus-visible,
+  .bag-icon:hover,
+  .bag-icon:focus-visible {
+    outline: 2px solid var(--primary-accent-color);
+    outline-offset: 4px;
   }
 
   .navbar-logo {
@@ -134,7 +148,7 @@ header {
 }
 
 h1 {
-  font-family: 'Bodoni moda SC';
+  font-family: 'Bodoni Moda SC';
   letter-spacing: clamp(0.05em, 1vw, 0.1em);
   font-weight: 500;
   line-height: 1.1;
@@ -143,7 +157,7 @@ h1 {
 }
 
 h2 {
-  font-family: Roboto Condensed;
+  font-family: 'Roboto Condensed';
   font-weight: 600;
   font-size: 16px;
   color: var(--primary-accent-color);
@@ -168,14 +182,14 @@ h2::before {
 }
 
 h3 {
-  font-family: 'Bodoni moda SC';
+  font-family: 'Bodoni Moda SC';
   letter-spacing: 0.03em;
   line-height: 1.2;
   text-transform: uppercase;
 }
 
 p {
-  font-family: Roboto Condensed;
+  font-family: 'Roboto Condensed';
   font-size: 24px;
   font-weight: 400;
   color: var(--text-color);
@@ -200,7 +214,7 @@ p {
   left: 0;
 
   h2 {
-    font-family: 'Bodoni moda SC';
+    font-family: 'Bodoni Moda SC';
     font-size: 24px;
     letter-spacing: 0.05em;
     line-height: 1;
