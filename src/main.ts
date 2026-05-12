@@ -160,6 +160,7 @@ gsap.from('#heritageInfoText', {
 });
 
 gsap.from('#cityBtnContainer', {
+  scrollTrigger: '#cityBtnContainer',
   opacity: 0,
   delay: 4,
   duration: 0.7,
