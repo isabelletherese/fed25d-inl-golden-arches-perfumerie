@@ -1,14 +1,18 @@
 # About the project
-Beskrivning av projektet och vald teknik.
+Golden Arches Parfumerie is a fictional luxury perfume brand built as a school project by Erik, Filip, Isabelle and Märta in the Frontend Developer program.
+
+The site was built using HTML, SCSS, TypeScript and Vite.
+
+Beskrivning av projektet och vald teknik, här får vi utveckla lite mer, men skrev bara in lite smått så länge. 
 
 ## Desktop 
 <img width="2960" height="7922" alt="Screen Shot 2026-05-12 at 16 34 36-fullpage" src="https://github.com/user-attachments/assets/0a18647c-2e78-4a1d-8127-92617f2f757c" />
 
 ## Tablet 
-screenshot
+<img width="1720" height="8320" alt="Screen Shot 2026-05-12 at 16 38 36-fullpage" src="https://github.com/user-attachments/assets/a2a8cb81-0df8-4b76-aad0-dbb55725b6f4" />
 
 ## Mobile 
-screenshot 
+<img width="1326" height="12141" alt="Screen Shot 2026-05-12 at 16 40 36-fullpage" src="https://github.com/user-attachments/assets/0f8ef83e-e8e3-44bc-a1e1-1eb4e399eaa3" />
 
 # About the design
 This project is based on the concept: What if McDonald’s created luxury perfumes?
