@@ -17,21 +17,27 @@
 <body>
   <!-- HEADER -->
   <header>
-    <img src="src/assets/svg/logo-woodmark.svg" alt="" class="header-logo" />
-    <img src="src/assets/svg/hamburger-menu-mobile.svg" alt="" class="hamburger-icon">
-    <img src="src/assets/svg/logo.svg" alt="" class="mobile-logo">
+    <img src="src/assets/svg/logo-woodmark.svg" alt="Golden Arches Parfumerie wordmark" class="header-logo" />
+    <button type="button" class="hamburger-icon" aria-label="Open menu">
+      <img src="src/assets/svg/hamburger-menu-mobile.svg" alt="" aria-hidden="true">
+    </button>
+    <img src="src/assets/svg/logo.svg" alt="Golden Arches Parfumerie logo" class="mobile-logo">
 
     <div class="navbar">
-      <img src="src/assets/svg/logo.svg" alt="" class="navbar-logo">
-      <img src="src/assets/svg/close.svg" alt="" class="close-icon">
-      <nav>
+      <img src="src/assets/svg/logo.svg" alt="Golden Arches Parfumerie logo" class="navbar-logo">
+      <button type="button" class="close-icon" aria-label="Close menu">
+        <img src="src/assets/svg/close.svg" alt="" aria-hidden="true">
+      </button>
+      <nav aria-label="Primary navigation">
         <a href="#collection">Collection</a>
         <a href="#heritage">The Heritage</a>
         <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
-    <img src="src/assets/svg/shopping-bag.svg" alt="" class="bag-icon" />
+    <button type="button" class="bag-icon" aria-label="Shopping bag">
+      <img src="src/assets/svg/shopping-bag.svg" alt="" aria-hidden="true">
+    </button>
   </header>
   <main>
     <!-- Cookies -->
@@ -48,7 +54,7 @@
 
     <!-- HERO -->
     <section class="hero">
-      <img class="hero-img" src="src/assets/product-images/golden-fries.png" alt="" />
+      <img class="hero-img" src="src/assets/product-images/golden-fries.png" alt="Golden fries perfume bottle, hero product image" fetchpriority="high" decoding="async" />
       <div class="hero-content">
         <p class="hero-label">L'essence de l'arche</p>
         <h1 class="hero-title">Smell like <span>success</span></h1>
@@ -78,10 +84,10 @@
             <article class="product-card">
               <div class="product-card__img">
                 <img src="./src/assets/product-images/big-mac-noir.png"
-                  alt="Flaska i glas med parfym föreställande en Big Mac" />
+                  alt="Big Mac Noir perfume bottle" loading="lazy" decoding="async" />
                 <div class="product-card__discover-container">
                   <button class="product-card__discover-btn" type="button"><img
-                      src="./src/assets/svg/go-to-fragrance.svg" alt=""><span>DISCOVER</span>
+                      src="./src/assets/svg/go-to-fragrance.svg" alt="" aria-hidden="true"><span>DISCOVER</span>
                   </button>
                 </div>
               </div>
@@ -95,11 +101,10 @@
               </div>
             </article>
             <article class="product-card">
-              <div class="product-card__img"><img src="./src/assets/product-images/eau-de-fries.png"
-                  alt="Flaska i glas med parfym föreställande en kartong med Pommes Frites">
+              <div class="product-card__img"><img src="./src/assets/product-images/eau-de-fries.png" alt="Eau de Fries perfume bottle" loading="lazy" decoding="async">
                 <div class="product-card__discover-container">
                   <button class="product-card__discover-btn" type="button"><img
-                      src="./src/assets/svg/go-to-fragrance.svg" alt=""><span>DISCOVER</span>
+                      src="./src/assets/svg/go-to-fragrance.svg" alt="" aria-hidden="true"><span>DISCOVER</span>
                   </button>
                 </div>
               </div>
@@ -114,11 +119,10 @@
               </div>
             </article>
             <article class="product-card">
-              <div class="product-card__img"><img src="./src/assets/product-images/mc-muffin-diffuser.png"
-                  alt="Liten fyrkantig flaska i glas med parfymstickor som sticker ur">
+              <div class="product-card__img"><img src="./src/assets/product-images/mc-muffin-diffuser.png" alt="Mc'Muffin Morning Diffuser bottle" loading="lazy" decoding="async">
                 <div class="product-card__discover-container">
                   <button class="product-card__discover-btn" type="button"><img
-                      src="./src/assets/svg/go-to-fragrance.svg" alt=""><span>DISCOVER</span>
+                      src="./src/assets/svg/go-to-fragrance.svg" alt="" aria-hidden="true"><span>DISCOVER</span>
                   </button>
                 </div>
               </div>
@@ -132,11 +136,10 @@
               </div>
             </article>
             <article class="product-card">
-              <div class="product-card__img"><img src="./src/assets/product-images/baked-apple-pie-lotion.png"
-                  alt="Flaska i glas med pump som innehåller Baked Apple Pie Lotion">
+              <div class="product-card__img"><img src="./src/assets/product-images/baked-apple-pie-lotion.png" alt="Baked Apple Pie Body Lotion bottle" loading="lazy" decoding="async">
                 <div class="product-card__discover-container">
                   <button class="product-card__discover-btn" type="button"><img
-                      src="./src/assets/svg/go-to-fragrance.svg" alt=""><span>DISCOVER</span>
+                      src="./src/assets/svg/go-to-fragrance.svg" alt="" aria-hidden="true"><span>DISCOVER</span>
                   </button>
                 </div>
               </div>
@@ -152,11 +155,10 @@
               </div>
             </article>
             <article class="product-card">
-              <div class="product-card__img"><img src="./src/assets/product-images/the-happy-collection.png"
-                  alt="Svart låda med guldband och företagets logga i guld">
+              <div class="product-card__img"><img src="./src/assets/product-images/the-happy-collection.png" alt="Happy Collection gift box" loading="lazy" decoding="async">
                 <div class="product-card__discover-container">
                   <button class="product-card__discover-btn" type="button"><img
-                      src="./src/assets/svg/go-to-fragrance.svg" alt=""><span>DISCOVER</span>
+                      src="./src/assets/svg/go-to-fragrance.svg" alt="" aria-hidden="true"><span>DISCOVER</span>
                   </button>
                 </div>
               </div>
@@ -171,11 +173,10 @@
               </div>
             </article>
             <article class="product-card">
-              <div class="product-card__img"><img src="./src/assets/product-images/soft-serve-cloud-mist.png"
-                  alt="Genomskinlig glasflaska med spraypump innehållande body-mist">
+              <div class="product-card__img"><img src="./src/assets/product-images/soft-serve-cloud-mist.png" alt="Soft Serve Cloud Mist spray bottle" loading="lazy" decoding="async">
                 <div class="product-card__discover-container">
                   <button class="product-card__discover-btn" type="button"><img
-                      src="./src/assets/svg/go-to-fragrance.svg" alt=""><span>DISCOVER</span>
+                      src="./src/assets/svg/go-to-fragrance.svg" alt="" aria-hidden="true"><span>DISCOVER</span>
                   </button>
                 </div>
               </div>
@@ -193,20 +194,20 @@
         </div>
         <div class="carousel__btn-wrapper">
           <button type="button" class="carousel__left-btn" id="carouselLeftBtn" aria-label="toggle left"><img
-              src="./src/assets/svg/product-section-arrow.svg" alt=""></button>
+              src="./src/assets/svg/product-section-arrow.svg" alt="" aria-hidden="true"></button>
           <button type="button" class="carousel__right-btn" id="carouselRightBtn" aria-label="toggle right"><img
-              src="./src/assets/svg/product-section-arrow.svg" alt=""></button>
+              src="./src/assets/svg/product-section-arrow.svg" alt="" aria-hidden="true"></button>
         </div>
       </div>
 
       <!-- Overlay -->
       <div class="product-overlay" id="productOverlay">
 
-        <img class="product-overlay__bg-img" src="./src/assets/product-images/big-mac-noir.png" alt="">
+        <img class="product-overlay__bg-img" src="./src/assets/product-images/big-mac-noir.png" alt="" aria-hidden="true">
         <h4>Big Mac <br><span class="italic-300">Noir</span></h4>
 
         <img class="product-overlay__fragrance-profile" src="./src/assets/product-images/fragrance-profile-big-mac.png"
-          alt="">
+          alt="Fragrance profile chart for Big Mac Noir" loading="lazy" decoding="async">
         <button class="product-overlay__exit-btn" type="button" aria-label="close overlay">
           <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
             <path
@@ -221,7 +222,7 @@
     <section class="golden-ratio" id="heritage">
       <h2>Our Heritage</h2>
       <div class="logo-wrapper" id="heritageBrandLogo">
-        <img src="src/assets/svg/logo.svg" alt="logotyp med gul bokstav m" />
+        <img src="src/assets/svg/logo.svg" alt="Golden Arches Parfumerie emblem" loading="lazy" decoding="async" />
       </div>
 
       <h3 id="heritageHeading">The Golden Ratio <span>of Scent</span></h3>
@@ -282,7 +283,7 @@
         <p>&copy; 2026</p>
       </div>
 
-      <nav class="footer__nav">
+      <nav class="footer__nav" aria-label="Footer navigation">
         <a href="#">Products</a>
         <a href="#">About</a>
         <a href="#">Privacy</a>
