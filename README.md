@@ -1,208 +1,32 @@
-## 🎨 About the design
+# About the project
+Golden Arches Parfumerie is a fictional luxury perfume brand built as a school project by Erik, Filip, Isabelle and Märta in the Frontend Developer program.
 
-This project includes a design handoff to support the almighty dev-team.
+The site was built using HTML, SCSS, TypeScript and Vite.
 
-### Figma
+Beskrivning av projektet och vald teknik, här får vi utveckla lite mer, men skrev bara in lite smått så länge. 
 
-You can explore the full design here:
+## Desktop 
+<img width="2960" height="7922" alt="Screen Shot 2026-05-12 at 16 34 36-fullpage" src="https://github.com/user-attachments/assets/0a18647c-2e78-4a1d-8127-92617f2f757c" />
 
-https://www.figma.com/design/1katAeN2f97tz1lXkmhaXM/Brand-identity---Golden-Arches-Parfumerie?node-id=0-1&t=y3PtfZuaHZC27DDs-1
+## Tablet 
+<img width="1720" height="8320" alt="Screen Shot 2026-05-12 at 16 38 36-fullpage" src="https://github.com/user-attachments/assets/a2a8cb81-0df8-4b76-aad0-dbb55725b6f4" />
 
-### Design Thinking
+## Mobile 
+<img width="1326" height="12141" alt="Screen Shot 2026-05-12 at 16 40 36-fullpage" src="https://github.com/user-attachments/assets/0f8ef83e-e8e3-44bc-a1e1-1eb4e399eaa3" />
 
-**The goal with this design was pretty simple for the design team:**
+# About the design
+This project is based on the concept: What if McDonald’s created luxury perfumes?
+The design team wanted to combine something familiar and playful with a more exclusive and modern visual style. The contrast between fast food and luxury became the core idea behind the design and helped create a memorable and unique user experience.
 
-Make it feel clean, modern and a bit "premium" - with a fun twist!
+The overall design uses a minimal and clean layout to give the products more focus and create a premium feeling. With plenty of spacing, clear hierarchy and simple navigation to avoid visual clutter and make the page easy to explore.
 
-We focused and wanted a feel of:
+The color palette is inspired by McDonald’s branding, mainly using black, white and grayscale tones together with yellow accent colors. The darker and neutral colors help create a more luxurious atmosphere, while the yellow highlights connect the design to the McDonald’s identity and draw attention to important interactive elements.
 
-- Letting the product take space
-- Reducing visual clutter
-- Creating a clear structure that's easy to follow
+We used different fonts to strengthen the visual identity of the project.
+For headings, we chose Bodoni Moda SC because it gives a more elegant and editorial look that matches luxury perfume branding. For body text, we used Roboto Condensed to keep the content clean and readable. Product names use Cormorant to create a more sophisticated feeling and help separate them visually from the rest of the content.
 
-Instead of cramping in too much, we worked with spacing, hierachy and contrast to guide the user naturally trough the page.
+The navigation is simple and placed at the top of the page to make the structure easy to understand. On mobile devices, the navigation changes into a hamburger menu to improve usability and save space.
 
-### Concept
+Interactive details and animations were added to make the page feel more dynamic without becoming distracting. Product cards change from grayscale to color on hover, and buttons include subtle hover effects to guide the user naturally through the page. We also used smooth transitions and scroll effects to create a more modern browsing experience.
 
-What if McDonald’s entered the world of luxury perfume?
-
-That idea became the foundation of the design.
-
-We took something familiar and everyday, and reimagined it in a completely different context — using a more minimal, premium and editorial style.
-
-The contrast between fast food and luxury is intentional.  
-It adds personality, humor and makes the experience more memorable.
-
-The goal was to create something that feels both familiar and unexpected at the same time.
-
-## Design below
-
-### Typography
-
-- Font sizes, weights and spacing are defined in Figma styles
-- Developers should follow the defined text styles
-
-Headings: Bondoni moda SC 
-
-Body font: Roboto Condensed, Light
-
-Product font: Cormorant, Regular
-
-### Interactions & UX
-
-We didn't want the UI to feel too static, so we added small interactive details that make it feel more alive - without being too distracting.
-
-#### Mobile Navigation (Hamburger Menu)
-
-On mobile, the navigation is replaced with a hamburger menu.
-
-##### Behavior
-
-- Tapping the hamburger icon opens a dropdown menu
-- The menu expands from the top (or header area)
-- Background content remains visible but inactive
-
-The menu can be closed by:
-
-- Tapping the hamburger icon again
-- Selecting a menu item
-- Tapping outside the menu
-- Or use the SVG for closing menus
-
----
-
-#### Product Content & Fragrance Profiles
-
-All product-related content is organized in the **Design System / Graphic Profile** in Figma.
-
-This includes:
-- Product images
-- Product names
-- Fragrance profiles (3-note system with percentages)
-
-See example of Big Mac Noir in the wireframe of how the layout should look.
-
-- Fragrance profiles should follow the same layout across all products
-- Progress bars (or equivalent) should visually represent the percentages
-
----
-
-#### Product Cards
-
-- Products are displayed in grayscale by default
-- On hover:
-    - The product image transitions to full color
-    - Product name changes to the primary accent color (yellow)
-    - A "+" icon and a text "DISCOVER" appears
-
-This is used to clearly signal and guide the user to the product details if interested.
-
-Users can:
-
-- Click the "+" icon
-- Click the product description
-
-#### Product Navigation
-
-Clicking a product opens a **fragrance profile dialog**.
-
-- The dialog overlays the current page (page takeover feel)
-- Focus is shifted entirely to the product
-
-#### Product Slider
-
-The product section uses a horizontal slider to display multiple products.
-
-##### Desktop
-- 3 products are visible at a time
-- Users can navigate using arrow control (right)
-- Slider moves one product at a time
-
-##### Tablet
-- 2 products are visible
-- Same interaction as desktop
-- Swipe support can be added for better UX
-- Optional: small indicators (dots) to show position
-
-##### Mobile
-- 1 product visible at a time
-- Users can swipe between products
-- Optional: small indicators (dots) to show position
-
-##### Interaction behavior
-
-- Slider movement should be smooth (200–300ms)
-- Slider should not auto-play (user control is preferred)
-
----
-
-#### Scroll Behavior
-
-- Sections are stacked vertically
-- Content appears progressively (can be implemented with fade-in or slight motion)
-- No abrupt jumps — transitions should feel smooth and consistent
-
-The idea is to guide the user down the page rather than forcing navigation.
-
----
-
-#### Buttons & Inputs
-
-- Buttons include hover states (color / contrast change)
-- Inputs are minimal and clean to match the premium feel
-- Focus states should be clearly visible (accessibility)
-
-#### Animations
-
-- Animations should be subtle and fast (200–300ms)
-
-Examples:
-- Hover transitions on product cards
-- Dialog open/close (fade or slight scale)
-- Section reveal on scroll
-
----
-
-### Responsiveness
-
-The design is built for:
-- Mobile
-- Tablet
-- Desktop
-
-Same idea across all sizes, but with different priorities depending on screen size.
-Mobile is more focused and simplified, white desktop allows more space and layout freedom.
-
----
-
-#### Design System
-
-A full design system is available in Figma:
-
-Includes:
-- Color styles (saved as Figma styles)
-- Typography scale
-- Buttons & inputs
-- Product images
-- SVG assets
-
-All visual guidelines should be taken from there.
-
-Some animations and behaviours will be shown in Figma as well. But not all - for example, scroll behaviours.
-
----
-
-### Additional
-
-Everything needed to implement the design (images, icons, screenshots and extra notes) can be found in the `/assets` folder.
-
-## 🤝 Handoff
-
-If anything is unclear or needs clarification, feel free to reach out.
-
-The goal has been to make this handoff as clear as possible — but questions are always welcome.
-
----
-
-Happy coding — and sorry in advance if this project makes you crave McDonald’s 🙂
-/Alex.J, Alexander.G, Gustav, Markus
+The website is fully responsive and designed for mobile, tablet and desktop. The layout adapts depending on screen size while keeping the same overall style and user experience across all devices.

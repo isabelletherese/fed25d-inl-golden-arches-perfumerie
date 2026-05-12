@@ -153,19 +153,44 @@ function toggleProductOverlay() {
 // --------------------- Cookie Banner ----------------------
 // ----------------------------------------------------------
 
+const LS_DB_COOKIES = 'cookies';
+
 const cookieBanner = document.querySelector('.cookies') as HTMLElement;
 const acceptBtn = document.getElementById('acceptBtn') as HTMLButtonElement;
 const declineBtn = document.getElementById('declineBtn') as HTMLButtonElement;
 
+function saveCookiesAnswerToLS(cookieAnswer: boolean) {
+  const stringified = JSON.stringify(cookieAnswer);
+
+  localStorage.setItem(LS_DB_COOKIES, stringified);
+}
+
+function readCookiesAnswerFromLS() {
+  const answer = localStorage.getItem(LS_DB_COOKIES);
+
+  if (!answer) {
+    return null;
+  }
+  return JSON.parse(answer);
+}
+
 acceptBtn.addEventListener('click', () => {
+  saveCookiesAnswerToLS(true);
   acceptBtn.classList.add('active');
   setTimeout(() => cookieBanner.classList.add('hidden'), 300);
 });
 
 declineBtn.addEventListener('click', () => {
+  saveCookiesAnswerToLS(false);
   declineBtn.classList.add('active');
   setTimeout(() => cookieBanner.classList.add('hidden'), 300);
 });
+
+const savedCookiesAnswer = readCookiesAnswerFromLS();
+
+if (savedCookiesAnswer !== null) {
+  cookieBanner.classList.add('hidden');
+}
 
 // ----------------------------------------------------------
 // ------------------ Animation Heritage --------------------
@@ -175,14 +200,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.from('#heritageBrandLogo', {
   scrollTrigger: '#heritageBrandLogo',
-  //   rotation: -1440,
   x: -1500,
   duration: 1.7,
 });
 
 gsap.from('#heritageHeading', {
   scrollTrigger: '#heritageHeading',
-  //   rotation: -1440,
   x: 1500,
   duration: 1.7,
   delay: 1,
@@ -190,7 +213,6 @@ gsap.from('#heritageHeading', {
 
 gsap.from('#heritageInfoText', {
   scrollTrigger: '#heritageInfoText',
-  //   rotation: -1440,
   x: -1500,
   duration: 1.7,
   delay: 2,
