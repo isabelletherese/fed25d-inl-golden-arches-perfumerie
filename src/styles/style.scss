@@ -85,6 +85,10 @@ header {
   .hamburger-icon {
     width: 25.5px;
     height: 17px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
   }
 
   .header-logo {
@@ -98,6 +102,10 @@ header {
 
   .bag-icon {
     margin-left: auto;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
   }
 }
 
@@ -132,6 +140,9 @@ header {
     right: 20px;
     z-index: 1000;
     cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
 
     &.visible {
       display: block;
@@ -143,6 +154,16 @@ header {
     top: 20px;
     left: 20px;
   }
+}
+
+.hamburger-icon:hover,
+.hamburger-icon:focus-visible,
+.close-icon:hover,
+.close-icon:focus-visible, 
+.bag-icon:hover,
+.bag-icon:focus-visible {
+  outline: 2px solid var(--primary-accent-color);
+  outline-offset: 4px;
 }
 
 h1 {
