@@ -12,7 +12,7 @@ screenshot
 
 # About the design
 This project is based on the concept: What if McDonald’s created luxury perfumes?
-The designer group wanted to combine something familiar and playful with a more exclusive and modern visual style. The contrast between fast food and luxury became the core idea behind the design and helped create a memorable and unique user experience.
+The design team wanted to combine something familiar and playful with a more exclusive and modern visual style. The contrast between fast food and luxury became the core idea behind the design and helped create a memorable and unique user experience.
 
 The overall design uses a minimal and clean layout to give the products more focus and create a premium feeling. With plenty of spacing, clear hierarchy and simple navigation to avoid visual clutter and make the page easy to explore.
 
