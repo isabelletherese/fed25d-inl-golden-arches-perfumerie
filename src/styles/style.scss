@@ -124,20 +124,6 @@ header {
     &.visible {
       display: block;
     }
-
-    &:hover,
-    &:focus-visible {
-      outline: 2px solid var(--primary-accent-color);
-      outline-offset: 4px;
-    }
-  }
-
-  .hamburger-icon:hover,
-  .hamburger-icon:focus-visible,
-  .bag-icon:hover,
-  .bag-icon:focus-visible {
-    outline: 2px solid var(--primary-accent-color);
-    outline-offset: 4px;
   }
 
   .navbar-logo {
@@ -145,6 +131,16 @@ header {
     top: 20px;
     left: 20px;
   }
+}
+
+.hamburger-icon:hover,
+.hamburger-icon:focus-visible,
+.close-icon:hover,
+.close-icon:focus-visible, 
+.bag-icon:hover,
+.bag-icon:focus-visible {
+  outline: 2px solid var(--primary-accent-color);
+  outline-offset: 4px;
 }
 
 h1 {
