@@ -9,7 +9,7 @@ Beskrivning av projektet och vald teknik, här får vi utveckla lite mer, men sk
 <img width="2960" height="7922" alt="Screen Shot 2026-05-12 at 16 34 36-fullpage" src="https://github.com/user-attachments/assets/0a18647c-2e78-4a1d-8127-92617f2f757c" />
 
 ## Tablet 
-<img width="1720" height="8320" alt="Screen Shot 2026-05-12 at 16 38 36-fullpage" src="https://github.com/user-attachments/assets/a2a8cb81-0df8-4b76-aad0-dbb55725b6f4" />
+<img width="1640" height="8312" alt="Screen Shot 2026-05-13 at 12 20 25-fullpage" src="https://github.com/user-attachments/assets/e1879405-91ce-4849-862d-01389db484e1" />
 
 ## Mobile 
 <img width="1326" height="12141" alt="Screen Shot 2026-05-12 at 16 40 36-fullpage" src="https://github.com/user-attachments/assets/0f8ef83e-e8e3-44bc-a1e1-1eb4e399eaa3" />
