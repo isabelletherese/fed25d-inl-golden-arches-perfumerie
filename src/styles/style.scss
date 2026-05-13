@@ -27,6 +27,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  padding-top: 87px;
+}
+
 body.nav-open {
   overflow: hidden;
 
@@ -47,8 +51,11 @@ header {
   display: flex;
   align-items: center;
   padding: 20px;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   z-index: 999;
   background-color: var(--background-color);
 
@@ -160,7 +167,7 @@ header {
 .hamburger-icon:hover,
 .hamburger-icon:focus-visible,
 .close-icon:hover,
-.close-icon:focus-visible, 
+.close-icon:focus-visible,
 .bag-icon:hover,
 .bag-icon:focus-visible {
   outline: 2px solid var(--primary-accent-color);
@@ -330,6 +337,10 @@ p {
 }
 
 @media screen and (min-width: 992px) {
+  main {
+    padding-top: 176px;
+  }
+
   header {
     justify-content: space-between;
     padding: 40px;
