@@ -1,4 +1,4 @@
-Live link: https://medieinstitutet.github.io/fed25d-grafiska-verktyg-brand-identity/
+[Live link](https://github.com/isabelletherese/fed25d-inl-golden-arches-perfumerie)
 
 # About the project
 Golden Arches Parfumerie is a fictional luxury perfume brand built as a school project at Medieinstitutet. The site was developed by a team of four frontend developer students, based on a design created by a separate team.
@@ -24,20 +24,6 @@ The project is built with HTML, SCSS and TypeScript and bundled with Vite. It fe
 [Märta Törnqvist](https://github.com/martatornqvist),
 [Filip Brandt](https://github.com/filip-brandt)
 
-#### Screenshots: 
-
-HTML-validation: 
-
-![HTML validation result from W3C HTML Validator](src/assets/screenshots/w3c_result.png)
-
-Accessibility analysis:
-
-Accessibility analysis in Chrome Lighthouse, desktop:
-![Accessibility analysis in Chrome Lighthouse, desktop](src/assets/screenshots/lighthouse_desktop.png)
-
-Accessibility analysis in Chrome Lighthouse, mobile:
-![Accessibility analysis in Chrome Lighthouse, mobile](src/assets/screenshots/lighthouse_mobile.png)
-
 ## Desktop 
 <img width="2960" height="7922" alt="Screen Shot 2026-05-12 at 16 34 36-fullpage" src="https://github.com/user-attachments/assets/0a18647c-2e78-4a1d-8127-92617f2f757c" />
 
@@ -47,6 +33,20 @@ Accessibility analysis in Chrome Lighthouse, mobile:
 
 ## Mobile 
 <img width="1326" height="12141" alt="Screen Shot 2026-05-12 at 16 40 36-fullpage" src="https://github.com/user-attachments/assets/0f8ef83e-e8e3-44bc-a1e1-1eb4e399eaa3" />
+
+#### Accessibility: 
+
+### W3C HTML Validator
+
+![HTML validation result from W3C HTML Validator](src/assets/screenshots/w3c_result.png)
+
+
+### Lighthouse – desktop
+![Accessibility analysis in Chrome Lighthouse, desktop](src/assets/screenshots/lighthouse_desktop.png)
+
+### Lighthouse – mobile
+![Accessibility analysis in Chrome Lighthouse, mobile](src/assets/screenshots/lighthouse_mobile.png)
+
 
 # About the design
 This project is based on the concept: What if McDonald’s created luxury perfumes?
