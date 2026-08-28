@@ -1,4 +1,4 @@
-[Live link](https://github.com/isabelletherese/fed25d-inl-golden-arches-perfumerie)
+[Live link](https://isabelletherese.github.io/fed25d-inl-golden-arches-perfumerie/)
 
 # About the project
 Golden Arches Parfumerie is a fictional luxury perfume brand built as a school project at Medieinstitutet. The site was developed by a team of four frontend developer students, based on a design created by a separate team.
